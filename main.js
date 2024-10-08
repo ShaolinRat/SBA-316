@@ -23,3 +23,9 @@ function createCard(event) {
   const cardBtn = document.getElementById("btn");
   
   cardBtn.addEventListener("click", createCard);
+  cardBtn.addEventListener("mouseover", () => {
+      cardBtn.classList.add("hover")
+  })
+  cardBtn.addEventListener("mouseout", () => {
+      cardBtn.classList.remove("hover")
+  })
